@@ -1,6 +1,7 @@
 *.pyc
 __pycache__/
 env/
+senv/
 .vscode/
 *.code-workspace
 *.log

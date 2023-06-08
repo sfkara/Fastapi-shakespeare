@@ -5,7 +5,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 app = FastAPI()
 
 
-model_path = "/Users/firat/Desktop/fastapi-serve/gpt2-shakesepeare"
+model_path = "gpt2-shakesepeare"
 tokenizer = GPT2Tokenizer.from_pretrained(model_path)
 model = GPT2LMHeadModel.from_pretrained(model_path)
 
