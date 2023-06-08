@@ -4,4 +4,4 @@
 source env/bin/activate
 
 # Run the FastAPI app using Uvicorn
-uvicorn api:app --reload
+uvicorn main:app --reload --host  "0.0.0.0"   --port "8000"

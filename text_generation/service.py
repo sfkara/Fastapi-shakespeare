@@ -2,7 +2,7 @@ import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Load the fine-tuned model and tokenizer
-model_path = "/Users/firat/Desktop/fastapi-shake/gpt2-shakesepeare"
+model_path = "./gpt2-shakesepeare"
 tokenizer = GPT2Tokenizer.from_pretrained(model_path)
 model = GPT2LMHeadModel.from_pretrained(model_path)
 
