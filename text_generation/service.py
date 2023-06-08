@@ -14,9 +14,10 @@ model = model.to(device)
 model.eval()
 
 
-def generate_text(prompt: str, temperature: float = 0.7, max_length: int = 100) -> str:
-    # Generate text
-    input_ids = tokenizer.encode(prompt, return_tensors="pt").to(device)
+def generate_text(input: str) -> str:
+    temperature = 0.7
+    max_length = 100
+    input_ids = tokenizer.encode(input, return_tensors="pt").to(device)
 
     output = model.generate(
         input_ids,

@@ -6,9 +6,9 @@ app = FastAPI()
 
 
 class TextGenerationRequest(BaseModel):
-    prompt: str
-    temperature: float = 0.7
-    max_length: int = 100
+    input: str
+    # temperature: float = 0.7
+    # max_length: int = 100
 
 
 class TextGenerationResponse(BaseModel):
@@ -17,7 +17,5 @@ class TextGenerationResponse(BaseModel):
 
 @app.post("/generate_text", response_model=TextGenerationResponse)
 def generate_text_endpoint(request: TextGenerationRequest):
-    generated_text = generate_text(
-        request.prompt, temperature=request.temperature, max_length=request.max_length
-    )
+    generated_text = generate_text(request.input)
     return TextGenerationResponse(generated_text=generated_text)
