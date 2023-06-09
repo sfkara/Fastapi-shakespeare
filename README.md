@@ -66,7 +66,7 @@ It's entirely up to you whether you just give input as shown above, or use it in
 ## Finetune Process
  I used colab for finetuning. As can be seen in the notebook(Shakespeare.ipynb), I started with a standard pre-process after downloading the necessary library and dataset. I experimented with parameters such as optimizer, scheduler, batch size (to the extent allowed by colab free gpus) and various epochs.
   - CosineAnnealingLR(More reletable than other options, linear scheduler didn't give me the result I wanted(e.g average loss) )
-  - Batch size(according to my experiments this was the biggest for this project)
+  - Batch size(according to my experiments my batch size value was the biggest for this project)
   - Used Adam for optimizer(This was the safest for me)
 
 
