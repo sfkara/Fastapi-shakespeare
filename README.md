@@ -43,12 +43,12 @@ Example Response:
 - After seeing the requirements, I first designed a simple API by getting a string from the uri with GET request.
 (e.g 
 ```sh
-GET 127.0.0.1:8000/generate_text/romeo
+GET 0.0.0.0:8000/generate_text/romeo
 ```
 )
-- Then I changed it with POST request with a structure that takes input over json(for microsevice structure). While setting up this structure, I paid attention to its modularity, I used pydantic for validation.
+- Microservice : I changed it with POST request with a structure that takes input over json(for microservice structure). While setting up this structure, I paid attention to its modularity, I used pydantic for validation.
 - In accordance with the Microservice architecture, it is possible to add more services to the structure in the future. (Models fine-tuned with other datasets, maybe like the image generation service)
-- Then, encapsulated the argument I gave in the Post request for temprature sampling, and I left this argument to the will. It stays in the service.py (temprature and max_length)(0.7 and 100).
+- Temperature sampling and Encapsulation : Then, encapsulated the argument I gave in the Post request for temperature sampling, and I left this argument to the will. It stays in the service.py (temperature and max_length)(0.7 and 60).
 It's entirely up to you whether you just give input as shown above, or use it in 3 arguments. 
 - All this process can be seen from the commit history.
 
