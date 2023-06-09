@@ -28,6 +28,9 @@ App and model deployed on Amazon EC2 instance.You can reach the api via
 https://13.59.178.31:30724/generate_text
 ```
 with valid POST request and body.
+examples ss from my ssh to EC2:<img width="808" alt="ec2" src="https://github.com/sfkara/Fastapi-shakespeare/assets/19964783/4f37b74d-ced2-44d3-8abe-affa20960f37">
+
+
 
 ## Example Request And Response
 After running the server, you can send input(json) with POST request.
