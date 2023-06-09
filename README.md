@@ -25,7 +25,7 @@ docker run -p 8000:8000 fastapi-shakespeare
 #### Option 3
 App and model deployed on Amazon EC2 instance.You can reach the api via 
 ```sh
-https://13.59.178.31:30724/generate_text
+http://13.59.178.31:8080/generate_text
 ```
 with valid POST request and body.
 examples ss from my ssh to EC2:<img width="808" alt="ec2" src="https://github.com/sfkara/Fastapi-shakespeare/assets/19964783/4f37b74d-ced2-44d3-8abe-affa20960f37">
