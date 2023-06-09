@@ -16,7 +16,7 @@ model.eval()
 
 def generate_text(input: str) -> str:
     temperature = 0.7
-    max_length = 100
+    max_length = 60
     input_ids = tokenizer.encode(input, return_tensors="pt").to(device)
 
     output = model.generate(
