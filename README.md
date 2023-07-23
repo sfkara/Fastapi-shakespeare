@@ -58,7 +58,7 @@ Example Response:
 GET 0.0.0.0:8000/generate_text/romeo
 ```
 )
-- Microservice : I changed it with POST request with a structure that takes input over json(for microservice structure). While setting up this structure, I paid attention to its modularity, I used pydantic for validation.
+-  I changed it with POST request with a structure that takes input over json(for microservice structure). I used pydantic for validation.
 - In accordance with the Microservice architecture, it is possible to add more services to the structure in the future. (Models fine-tuned with other datasets, maybe like the image generation service)
 - Temperature sampling and Encapsulation : Then, encapsulated the argument I gave in the Post request for temperature sampling, and I left this argument to the will. It stays in the service.py (temperature and max_length)(0.7 and 60).
 It's entirely up to you whether you just give input as shown above, or use it in 3 arguments. 
